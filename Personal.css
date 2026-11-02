@@ -1,0 +1,352 @@
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100%;
+    height: 12vh;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    text-align: center;
+    z-index: 100;
+    font-family: "Open Sans", sans-serif;
+}
+
+.Black {
+    width: 180px;
+    height: 40px;
+    display: flex;
+    background-color: #F9F9F9;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 5px;
+}
+.Black a {
+    color: black;
+    font-weight: 550;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.Center {
+    display: flex;
+    gap: 30px;
+    justify-self: center;
+}
+.drop {
+    width: 330px;
+    height: 530px;
+    background-color: #FFFF;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 999;
+    top: 45px;
+    left: -20px;
+    border-top: 1px solid #e0dbdb;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 20px;
+    /* flex-direction: column; */
+    display: none;
+}
+.dropped {
+     width: 330px;
+    height: 220px;
+    background-color: #FFFF;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 999;
+    top: 45px;
+    left: -20px;
+    border-top: 1px solid #e0dbdb;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 20px;
+    display: none;
+}
+.navlink:hover .dropped {
+    display: block;
+}
+.Oily {
+    width: 300px;
+    height: 2px;
+    background-color: #e0dbdb;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.Greasy {
+    width: 300px;
+    height: 2px;
+    background-color: #e0dbdb;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.File {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    gap: 10px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+.File:hover {
+    background-color: #F9F9F9;
+}
+.Tit {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.Poat {
+    font-size: 12px;
+}
+.Foam {
+    color: gainsboro;
+    font-size: 12px;
+    margin-top: -10px;
+}
+.navlink {
+    position: relative;
+    cursor: pointer;
+}
+.navlink:hover .drop {
+    display: block;
+}
+.English {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.Eng {
+    height: 20px;
+}
+.Tack {
+    width: 14vw;
+    height: 24vh;
+    background-color: #DDDDDD;
+    position: absolute;
+    top: 60px;
+    border-radius: 10px;
+    justify-content: start;
+    text-align: left;
+    align-items: center;
+    font-size: 14px;
+    line-height: 12px;
+    padding-left: 15px;
+    padding-top: 11px;
+    display: none;
+}
+
+.English:hover .Tack {
+    display: block;
+}
+.Log {
+    border: 1px solid #4F3FD7;
+    width: 70px;
+    height: 40px;
+    color: #4F3FD7;
+    background-color: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+.Acc {
+     width: 140px;
+    height: 40px;
+    color: #ffff;
+    background-color: #4F3FD7;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+.Acc:hover {
+    transform: scale(0.975);
+}
+.Right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.MotherDiv {
+    width: 100%;
+    height: 820px;
+    background-color: #4F3FD7;
+    background-image: url("https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/681149da8df0d9921c04e3fc_hero%20bg.svg");
+    background-position: center;
+    background-size: cover;
+}
+.Son {
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    scrollbar-width: none;
+}
+.Carry {
+    animation: moving 17s linear infinite;
+}
+
+.img {
+    width: 600px;
+    overflow: hidden;
+    display: flex;
+    margin-left: 50px;
+    padding-top: 100px;
+}
+@keyframes moving {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.Past {
+    height: 780px;
+}
+.Pass{
+    position: absolute;
+    top: 580px;
+    left: 150px;
+    backdrop-filter: blur(50px);
+    z-index: 2;
+}
+.Position {
+    width: 1000px;
+    position: relative;
+    background-image: url("https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/67fd3b6d48813d28793babef_Hero%20img%20personal.webp");
+    background-position: center;
+    background-size: contain;
+    height: 1050px;
+    margin-left: 410px;
+    margin-top: -250px;
+    background-repeat: no-repeat;
+}
+.Head {
+    font-size: 82.5px;
+    font-family: "Open Sans", sans-serif;
+}
+.Down {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: -60px;
+}
+.Leftext {
+    margin-left: 40px;
+    color: white;
+    margin-top: -820px;
+}
+
+.flap {
+    display: flex;
+    gap: 30px;
+}
+.Create {
+    width: 180px;
+    height: 45px;
+    background-color: white;
+    border-radius: 10px;
+    color: #4F3FD7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.Lag {
+    width: 1px;
+    height: 18px;
+    background-color: white;
+}
+.Fixit {
+    display: flex;
+    gap: 4px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    background-color: #CAC5F3;
+    border: 1px solid white;   
+    border-radius: 10px;
+    width: 200px;
+    height: 45px;
+    position: relative;
+}
+.dropdown {
+    width: 200px;
+    height: 210px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    /* display: flex; */
+    gap: 20px;
+    flex-direction: column;
+    border-radius: 20px;
+    top: 60px;
+    background-color: white;
+    overflow: hidden;
+    display: none;
+}
+.dropdown img {
+    margin-top: -10px;
+    margin-left: 25px;
+}
+.Scan {
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+.Fixit:hover .dropdown {
+    display: block;
+}
+.Pool {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.Left {
+    display: flex;
+    gap: 15px;
+}
+@media (max-width: 480px) {
+    .MotherDiv {
+        display: block;
+    }
+    .Pass {
+        visibility: hidden;
+    }
+    .Position {
+        width: 300px;
+    }
+    .img {
+        width: 100vw;
+        padding-top: 20px;
+    }
+}
