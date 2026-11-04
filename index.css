@@ -1,0 +1,937 @@
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100%;
+    height: 12vh;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    text-align: center;
+    z-index: 100;
+    font-family: "Open Sans", sans-serif;
+}
+
+.Black {
+    width: 180px;
+    height: 40px;
+    display: flex;
+    background-color: #F9F9F9;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 5px;
+}
+.Black a {
+    color: black;
+    font-weight: 550;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.Center {
+    display: flex;
+    gap: 65px;
+    justify-self: center;
+}
+.drop {
+    width: 330px;
+    height: 530px;
+    background-color: #FFFF;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 999;
+    top: 45px;
+    left: -20px;
+    border-top: 1px solid #e0dbdb;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 20px;
+    /* flex-direction: column; */
+    display: none;
+}
+.dropped {
+     width: 330px;
+    height: 220px;
+    background-color: #FFFF;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 999;
+    top: 45px;
+    left: -20px;
+    border-top: 1px solid #e0dbdb;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 20px;
+    display: none;
+}
+.navlink:hover .dropped {
+    display: block;
+}
+.Oily {
+    width: 300px;
+    height: 2px;
+    background-color: #e0dbdb;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.Greasy {
+    width: 300px;
+    height: 2px;
+    background-color: #e0dbdb;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.File {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    gap: 10px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+.File:hover {
+    background-color: #F9F9F9;
+}
+.Tit {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.Poat {
+    font-size: 12px;
+}
+.Foam {
+    color: gainsboro;
+    font-size: 12px;
+    margin-top: -10px;
+}
+.navlink {
+    position: relative;
+    cursor: pointer;
+}
+.navlink:hover .drop {
+    display: block;
+}
+.Pav {
+    font-size: 14px;
+    font-weight: bold;
+}
+.English {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.Eng {
+    height: 20px;
+}
+.Tack {
+    width: 14vw;
+    height: 24vh;
+    background-color: #DDDDDD;
+    position: absolute;
+    top: 60px;
+    border-radius: 10px;
+    justify-content: start;
+    text-align: left;
+    align-items: center;
+    font-size: 14px;
+    line-height: 12px;
+    padding-left: 15px;
+    padding-top: 11px;
+    display: none;
+}
+
+.English:hover .Tack {
+    display: block;
+}
+.Log {
+    border: 1px solid #4F3FD7;
+    width: 70px;
+    height: 40px;
+    color: #4F3FD7;
+    background-color: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+.Acc {
+     width: 140px;
+    height: 40px;
+    color: #ffff;
+    background-color: #4F3FD7;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+.Acc:hover {
+    transform: scale(0.975);
+}
+.Right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.MotherDiv {
+    width: 100%;
+    height: 820px;
+    background-color: #4F3FD7;
+    background-image: url("https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/681149da8df0d9921c04e3fc_hero%20bg.svg");
+    background-position: center;
+    background-size: cover;
+}
+.Son {
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    scrollbar-width: none;
+}
+.Carry {
+    animation: moving 17s linear infinite;
+}
+
+.img {
+    width: 600px;
+    overflow: hidden;
+    display: flex;
+    margin-left: 50px;
+    padding-top: 100px;
+}
+@keyframes moving {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.Past {
+    height: 780px;
+}
+.Pass{
+    position: absolute;
+    top: 580px;
+    left: 150px;
+    backdrop-filter: blur(50px);
+    z-index: 2;
+}
+.Position {
+    width: 1050px;
+    position: relative;
+    background-image: url("https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/67fd3b6d48813d28793babef_Hero%20img%20personal.webp");
+    background-position: center;
+    background-size: contain;
+    height: 1050px;
+    margin-left: 510px;
+    margin-top: -270px;
+    background-repeat: no-repeat;
+}
+.Head {
+    font-size: 82.5px;
+    font-family: "Open Sans", sans-serif;
+}
+.Down {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: -60px;
+}
+.Leftext {
+    margin-left: 40px;
+    color: white;
+    margin-top: -820px;
+}
+
+.flap {
+    display: flex;
+    gap: 30px;
+}
+.Create {
+    width: 180px;
+    height: 45px;
+    background-color: white;
+    border-radius: 10px;
+    color: #4F3FD7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.Lag {
+    width: 1px;
+    height: 18px;
+    background-color: white;
+}
+.Fixit {
+    display: flex;
+    gap: 4px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    background-color: #CAC5F3;
+    border: 1px solid white;   
+    border-radius: 10px;
+    width: 200px;
+    height: 45px;
+    position: relative;
+}
+.dropdown {
+    width: 200px;
+    height: 210px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    /* display: flex; */
+    gap: 20px;
+    flex-direction: column;
+    border-radius: 20px;
+    top: 60px;
+    background-color: white;
+    overflow: hidden;
+    display: none;
+}
+.dropdown img {
+    margin-top: -10px;
+    margin-left: 25px;
+}
+.Scan {
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+.Fixit:hover .dropdown {
+    display: block;
+}
+.Pool {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.Left {
+    display: flex;
+    gap: 15px;
+}
+@media (max-width: 480px) {
+    .Pass {
+        visibility: hidden;
+    }
+    .Leftext {
+        width: 100%;
+        padding-top: 80px;
+    }
+    .img {
+        width: 90%;
+        padding-top: 20px;
+    }
+    .Spot {
+        width: 70vw;
+    }
+    .Head {
+        font-size: 30px;
+        width: 100%;
+    }
+    .Down {
+        margin-top: 3vh;
+        font-size: 13.5px;
+        height: 40px;
+    }
+    .flap {
+        margin-top: 60px;
+        width: 88%;
+        padding-right: 40px;
+        justify-self: start;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+    .Position {
+        margin-left: -400px;
+        height: 60vh;
+        margin-top: 300px;
+    }
+    .MotherDiv {
+        overflow: hidden;
+    }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+    .img {
+        width: 90%;
+        padding-top: 20px;
+    }
+    .Leftext {
+        width: 100%;
+        margin-top: -60px;
+    }
+    .Position {
+        height: 690px;    
+        width: 1000px;
+        max-width: 1000px;
+        position: absolute;
+        padding-top: 10px;
+        top: 750px;
+        margin-left: -200px;
+        z-index: 150;
+    }
+    .MotherDiv {
+        overflow: hidden;
+        position: relative;
+    }
+    .Pass {
+        visibility: hidden;
+    }
+    .flap {
+        margin-top: 60px;
+        width: 88%;
+        padding-right: 40px;
+        justify-self: start;
+        gap: 20px;
+        padding-bottom: 100px;
+    }
+
+}
+
+.White {
+    width: 100%;
+    height: 2000px;
+    background-color: white;
+}
+.Filt {
+    text-align: center;
+    font-size: 14.5px;
+    padding-top: 40px;
+    font-family: "Open Sans", sans-serif;
+}
+.BACKED {
+    display: flex;
+    gap: 35px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+.BACKED img {
+    width: 80px;
+}
+.Over {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 200px;
+    font-family: sans-serif;
+}
+.Tip {
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-top: -30px;
+}
+@media (max-width: 480px) {
+    .Filt {
+        font-size: 13px;
+    }
+    .BACKED {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .Over {
+        font-size: 25px;
+    }
+    .Tip {
+        display: none;
+    }
+}
+.Woman {
+    height: 500px;
+    width: 430px;
+    background-color: #F8F8F8;
+    border-radius: 20px;
+}
+.Twin {
+    height: 540px;
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Child {
+    height: 240px;
+    background-color: #F8F8F8;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Tick {
+    margin-left: 15px;
+}
+.Yup {
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+}
+.Tick p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+}
+.Pope p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.Broad {
+    display: flex;
+    gap: 20px;
+    justify-self: center;
+}
+.Pope {
+    display: flex;
+    gap: 15px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.Pope p {
+    font-weight: 400;
+}
+
+.Womanimg {
+    margin-left: 15px;
+    margin-top: 20px;
+    height: 400px;
+    border-radius: 10px;
+}
+.Woman div {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.Woman p {
+    font-weight: 450;
+}
+.Star {
+    width: 400px;
+    height: 50px;
+    display: flex;
+    gap: 15px;
+    background-color: #24201E;
+    color: #A7A6A5;
+    border-radius: 20px;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.Star p {
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+}
+@media (max-width: 480px) {
+    .Woman {
+        display: none;
+    }
+    .Child {
+        width: 40vw;
+        font-size: 15px;
+        height: 50vh;
+        /* margin-left: -100px; */
+    }
+    .Twin {
+        height: 100vh;
+    }
+    .Broad {
+        width: 85vw;
+        gap: 10px;
+        /* margin-left: 20vw; */
+        justify-self: center;
+    }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+    .Broad {
+        width: 90vw;
+        justify-self: center;
+        height: 50vh;
+        gap: 20px;
+    }
+    .Woman {
+        display: none;
+    }
+    .Child {
+        width: 42vw;
+        font-size: 14px;
+        height: 24vh;
+    }
+    .Twin {
+        height: 50vh;
+        width: 42vw;
+    }
+}
+.Scrollimg div {
+    width: 100vw;
+    height: 100vh;
+    justify-self: center;
+    position: sticky;
+}
+.Scrollimg {
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    margin-top: 50px;
+}
+
+.Scroll1 {
+    background-image: url("https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/6970bf1187dee404aee42a83_Raenest_India_2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    top: 0;
+    position: relative;
+}
+.Scroll2 {
+    background-image: url("https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/67da657539515e002e5ccd03_global%20acc%20slider2%20img-p-1080.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+    top: 0;
+    position: relative;
+}
+.Scroll3 {
+    background-image: url("https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/69d79ee49c0d8b67d4ad1a64_newvisacard-p-1080.jpg");
+    z-index: 3;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    position: relative;
+}
+.Scroll4 {
+    background-image: url("https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/69735a6bd934d9d0ad410999_Raenest_55-p-1080.png");
+    z-index: 4;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+}
+.Scroll5 {
+    background-image: url("https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/6973511d15f05ffbebd9d4f1_Raenest_Philipines%201.png");
+    z-index: 5;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+}
+.Dish {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    margin-left: 65px;
+    font-family: "Open Sans", sans-serif;
+    padding-top: 70px;
+}
+.Nanny {
+    position: absolute;
+    top: 350px;
+    left: 200px;
+}
+.Banny {
+    position: absolute;
+    top: 350px;
+    left: 200px;
+}
+.Scroll1 div {
+    padding-left: 850px;
+    padding-top: 250px;
+    color: white;
+    width: 500px;
+}
+.Way {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+}
+.Tay {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+}
+.more {
+    display: flex;
+    gap: 10px;
+    font-family: "Open Sans", sans-serif;
+}
+.Lap {
+    padding-left: 650px;
+    padding-top: 100px;
+    color: white;
+}
+.Tab {
+    position: absolute;
+    top: 150px;
+    left: 950px;
+}
+.Day {
+    padding-left: 120px;
+    padding-top: 200px;
+    color: white;
+}
+.Panny {
+    position: absolute;
+    top: 250px;
+    left: 400px;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+.Scroll4 div {
+    padding-left: 120vw;
+    padding-top: 250px;
+    color: white;
+
+}
+.Scroll5 div {
+    padding-left: 120vw;
+    padding-top: 250px;
+    color: white;
+}
+@media (max-width: 480px) {
+    .Scroll1 {
+        background-image: url("https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/680f48e3bce57353bf2a8812_Receive%20money.webp");
+    }
+    .Scroll2 {
+        background-image: url("https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/680f48e30e084ea64adfe67e_Global%20accounts.webp");
+    }
+    .Scroll3 {
+        background-image: url("https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/680f48e3539ddb3a83e861a0_Cards%20for%20every%20occasson-p-500.webp");
+    }
+    .Scroll4 {
+        background-image: url("https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/680f48e3a250148ddf386ba4_fast%20transfers.webp");
+    }
+    .Scroll5 {
+        background-image: url("https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/680f48e4bce57353bf2a88b4_earn.webp");
+    }
+    .Dish {
+        font-size: 18px;
+        padding-right: 50px;
+    }
+    .Scrollimg {
+        overflow: hidden;
+        height: 100vh;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        margin-top: 50px;
+    }
+    .Scroll1 div {
+        margin-right: 300px;
+        margin-left: -330px;
+        margin-top: -250px;
+    }
+    .Way {
+        font-size: 16px;
+    }
+    .Tay {
+        font-size: 13px;
+    }
+    .Nanny {
+        width: 200px;
+        margin-left: -70px;
+        margin-top: 200px;
+    }
+    .Lap {
+        margin-left: -330px;
+        margin-right: 200px;
+        margin-top: -100px;
+    }
+    .Tab {
+        margin-left: -400px;
+        width: 150px;
+    }
+    .Day {
+        margin-top: -200px;
+    }
+    .Panny {
+        margin-left: -350px;
+        margin-right: 600px;
+        width: 150px;
+        margin-top: 250px;
+    }
+    .Banny {
+        width: 200px;
+        margin-left: -100px;
+        margin-top: 50px;
+    }
+    .Scroll4 div {
+        margin-top: 100px;
+        margin-left: -400px;
+    }
+    .Scroll5 div {
+        margin-left: -300px;
+        margin-top: -250px;
+    }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+    .Scrollimg {
+        height: 88%;
+    }
+    .Scroll1 div {
+        margin-top: -260px;
+        margin-left: -1025px;
+    }
+    .Nanny {
+        margin-top: 300px;
+        margin-left: -100px;
+    }
+    .Lap {
+        margin-left: -520px;
+        margin-top: -120px;
+    }
+    .Tab {
+        margin-left: -400px;
+        margin-top: 550px;
+        width: 200px;
+    }
+    .Day {
+        margin-top: -210px;
+    }
+    .Panny {
+        margin-top: 300px;
+        margin-left: -100px;
+        width: 200px;
+    }
+    .Scroll4 div {
+        margin-left: -850px;
+        margin-top: 500px;
+    }
+    .Scroll5 div {
+        margin-left: -840px;
+        margin-top: -300px;
+    }
+}
+
+/* Base Section Styling */
+.everyone-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Header Container (Flexbox for side-by-side alignment) */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+/* Outer Pill Track Container */
+.pill-nav {
+  display: inline-flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  padding: 4px;
+  border-radius: 9999px; /* Complete capsule curve */
+  gap: 2px;
+}
+
+/* Individual Pill Buttons */
+.pill-btn {
+  background: transparent;
+  border: none;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+}
+
+.pill-btn:hover {
+  color: #000000;
+}
+
+/* Active State (First Pill in Image) */
+.pill-btn.active {
+  background-color: #050b14; /* Deep dark black background */
+  color: #ffffff;
+}
+
+/* Cards Grid Layout */
+.cards-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); /* Gives left card slightly more width like the UI */
+  gap: 24px;
+}
+
+/* Individual Card Styling */
+.card {
+  position: relative;
+  height: 480px;
+  border-radius: 32px; /* Smooth rounded corners */
+  overflow: hidden;
+  background-color: #1a1a1a;
+}
+
+/* Image behavior inside card */
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text Overlay inside Card */
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 32px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.card-title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -0.3px;
+}
