@@ -21,6 +21,9 @@ nav {
     z-index: 100;
     font-family: "Open Sans", sans-serif;
 }
+@media (max-width: 480px) {
+    
+}
 
 .Black {
     width: 180px;
