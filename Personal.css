@@ -1419,7 +1419,7 @@ nav {
         transform: translateY(0);
     }
     100% {
-        transform: translateY(-150%);
+        transform: translateY(-70%);
     }
 }
 
@@ -1471,5 +1471,123 @@ nav {
         margin-left: -100vw;
     }
 }
+
+.cards-container {
+      display: flex;
+      gap: 24px;
+      justify-self: center;
+    }
+    .feature-card {
+      position: relative;
+      width: 450px;
+      height: 550px;
+      border-radius: 24px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #5b45e0;
+    }
+
+    .badge {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 48px;
+      height: 48px;
+      background-color: #251280;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 16px;
+      border-bottom-left-radius: 24px;
+      z-index: 2;
+    }
+
+
+    .card-body {
+      background-color: #5b45e0;
+      padding: 40px 24px 24px 24px;
+      height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mockup-box {
+      background-color: #ffffff;
+      width: 400px;
+      height: 220px;
+      border-radius: 16px;
+      overflow: hidden;
+      padding: 16px;
+    }
+    .card-footer {
+      background-color: #251280;
+      padding: 24px;
+      color: #ffffff;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .card-footer h3 {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .card-footer p {
+      font-size: 13px;
+      line-height: 1.45;
+      color: rgba(255, 255, 255, 0.85);
+    }
+    .kohot {
+        font-size: 40px;
+        font-family: "Open Sans", sans-serif;
+        padding-top: 45px;
+        margin-left: 40px;
+        color: #24201E;
+    }
+
+    @media (max-width: 480px) {
+        .cards-container {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .feature-card {
+            width: 90vw;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        .cards-container {
+            width: 300vw;
+            margin-left: 110vw;
+        }
+        .feature-card {
+            width: 28vw;
+            height: 35vh;
+        }
+        .Posh {
+            width: 150px;
+            padding-top: -40px;
+        }
+        .Bush {
+            width: 180px;
+            padding-top: -40px;
+        }
+        .Ipo {
+            width: 240px;
+            padding-top: -50px;
+        }
+        .card-footer {
+            margin-top: -8vh;
+        }
+    }
+
+    
 
 
