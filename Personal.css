@@ -200,9 +200,13 @@ nav {
     margin-left: 15px;
     border-radius: 5px;
 }
+.Stocks {
+    height: 25px;
+    padding-top: 15px;
+}
 .kinsy {
-    height: 40px;
-    padding-top: 10px;
+    height: 30px;
+    padding-top: 15px;
 }
 
 .File:hover {
@@ -962,13 +966,13 @@ nav {
       padding-left: 10px;
       padding-right: 10px;
       display: flex;
-      gap: 20px;
+      gap: 10px;
       width: 90%;
       max-width: 750px;
       margin: 0 auto 32px auto;
       overflow: hidden;
       align-items: center;
-      height: 50px;
+      height: 35px;
 }
 
 .top-nav-bar div {
@@ -984,16 +988,15 @@ nav {
 
 .pill-link {
       display: block;
-      padding: 10px 4px;
+      padding: 6px 6px;
       border-radius: 9999px;
-      font-size: 1.1rem;
+      font-size: 1.0rem;
       font-weight: 600;
       font-family: "Open Sans", sans-serif;
       color: #24201E;
       text-decoration: none;
       white-space: nowrap;
       transition: background-color 0.2s ease, color 0.2s ease;
-      outline: none;
 }
 
 .pill-link:active {
@@ -1449,9 +1452,7 @@ nav {
         display: flex;
         gap: 615px;
     }
-    .Pan1:hover .Reveal {
-        left: -50px;
-    }
+    
     .Blogg {
         margin-left: -640px;
     }
@@ -1848,7 +1849,8 @@ nav {
             font-size: 14px;
         }
         .Arrow {
-            margin-left: -400vw;
+            margin-left: -500px;
+            margin-right: 200px;
         }
         .Arrow2 {
             margin-left: -400vw;
