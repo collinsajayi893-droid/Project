@@ -1426,6 +1426,7 @@ nav {
     }
     nav {
         height: 7vh;
+        gap: 300px;
     }
     .Left img {
         width: 100px;
@@ -1439,7 +1440,7 @@ nav {
     }
     .menu:hover .Stats {
         display: block; 
-        left: -360px;
+        left: -436px;
         top: 25px;
         width: 100vw;
         height: 100vh;
