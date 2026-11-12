@@ -42,13 +42,16 @@ nav {
     display: none;
     max-height: 0;
     position: static;
+    margin-top: 40px;
+    margin-left: -155vw;
 }
 .Pan1:hover .Reveal {
-    display: flex;
-    flex-direction: column;
-    margin-left: 100px;
-    margin-top: 400px;
-    max-height: 400px;
+    display: block;
+    max-height: 550px;
+}
+.Pan1:hover .caret {
+    margin-top: -340px;
+    margin-bottom: 120px;
 }
 .Pan2 {
     display: flex;
@@ -57,21 +60,64 @@ nav {
 }
 .Pan2:hover .but-on {
     display: block;
-    top: 35px;
-    left: -20px;
-    max-height: 200px;
+    max-height: 300px;
+}
+.Pan2:hover .Nicky {
+     margin-top: -60px;
+    margin-bottom: 100px;
 }
 .but-on {
-    display: none; 
-    z-index: 100;
+    display: none;
+    max-height: 0; 
     position: static;
+    margin-top: 40px;
+    margin-left: -162vw;
 }
 .Blogg {
     margin-left: -250px;
     margin-top: 20px;
 }
+.England {
+    justify-self: center;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
 
+.England:hover .Tack {
+    display: block;
+}
 
+.inn {
+    width: 90vw;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4F3FD7;
+    margin-top: 31vh;
+    border: 1px solid #4F3FD7;
+    justify-self: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Internal {
+     width: 90vw;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 15px;
+    background-color: #4F3FD7;
+    justify-self: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
 
 .Black {
@@ -198,8 +244,8 @@ nav {
     height: 20px;
 }
 .Tack {
-    width: 14vw;
-    height: 24vh;
+    width: 200px;
+    height: 150px;
     background-color: #DDDDDD;
     position: absolute;
     top: 60px;
@@ -453,7 +499,7 @@ nav {
         padding-top: 10px;
         top: 750px;
         margin-left: -200px;
-        z-index: 150;
+        /* z-index: 150; */
     }
     .MotherDiv {
         overflow: hidden;
@@ -1356,7 +1402,7 @@ nav {
         display: block; 
         left: -358px;
         top: 25px;
-        width: 98vw;
+        width: 100vw;
         height: 100vh;
     }
 }
@@ -1371,12 +1417,43 @@ nav {
     .Right {
         display: none;
     }
-    nav {
-        height: 7vh;
-    }
     .menu {
         display: flex;
         width: 40px;
+    }
+    nav {
+        height: 7vh;
+    }
+    .Left img {
+        width: 100px;
+    }
+    .Stats {
+        width: 560vw;
+        height: 100vh;
+        background-color: white;
+        margin-left: -280px;
+        z-index: 800;
+    }
+    .menu:hover .Stats {
+        display: block; 
+        left: -360px;
+        top: 25px;
+        width: 100vw;
+        height: 100vh;
+    }
+    .Pan1 {
+        display: flex;
+        gap: 580px;
+    }
+    .Pan2 {
+        display: flex;
+        gap: 615px;
+    }
+    .Pan1:hover .Reveal {
+        left: -50px;
+    }
+    .Blogg {
+        margin-left: -640px;
     }
 }
 
